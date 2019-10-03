@@ -20,10 +20,11 @@ module.exports = function(app) {
         newFriendsMatch(req.body)
 
         friendsData.push(req.body)
-        // res.send({
-        //     bestFriendName: friendsData[bestFriendID].name,
-        //     bestFriendPic: friendsData[bestFriendID].picture
-        // });
+        
+        res.send({
+            bestFriendName: friendsData[bestFriendID].name,
+            bestFriendPic: friendsData[bestFriendID].picture
+        });
     })
 
 }

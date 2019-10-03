@@ -167,7 +167,7 @@
         $("#submit").on("click",function(event){
             event.preventDefault();
 
-            var userData = {
+            var newFriend = {
                 name: $(".#name").val(),
                 picture: $("#picture").val(),
                 scores: [ 
@@ -182,7 +182,11 @@
                     $("question_9").val(),
                     $("question_10").val(),
                 ]
-            }
+            };
+
+            $.post("/api/friends", newFriend, function(data){
+                //returns the data on lines 25 and 26 on apiRoutes.js
+            })
         })
         
     </script>
