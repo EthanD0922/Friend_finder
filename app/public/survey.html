@@ -1,18 +1,170 @@
-<!DOCTYPE html>
+<!DOCTYPE htm>
 <head>
     <title>Friend Finder</title>
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </head>
 <body>
 
     <div class = "container">
         
-        <div class = "jumbotron">
-            <h1 class = "text-center"><span class = "fa fa-user-plus"></span>Friend Finder</h1>
+        <h1>Survey</h1>
+        <h4>Answer these questions and receive our suggestion for your new best friend based on high-tech analytics and our patented formula!</h4>
 
-            <h3 class = "text-center">Come here to find your next best friend</h3>
-        </div>
+        <hr>
+
+        <h4>Name</h4>
+        <input type="text" id="name" class="form-control" placeholder = "Required" required>
+
+        <h4>Picture</h4>
+        <input type="text" id="picture" class="form-control" placeholder = "Required" required>
+
+        <hr>
     </div>
+
+        <div class = "container">
+            <h4>Question 1</h4>
+            <p>You consider yourself Sociable.</p>
+            <select class="chosen-select" id="question_1">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select>
+            <hr>
+        </div>
+
+        <div class = "container">
+            <h4>Question 2</h4>
+            <p>You enjoy going out.</p>
+            <select class="chosen-select" id="question_2">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select>
+            <hr>
+        </div>
+        
+        <div class = "container">
+            <h4>Question 3</h4>
+            <p>You enjoy cooking.</p>
+            <select class="chosen-select" id="question_3">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select>
+            <hr>
+        </div>
+        
+        <div class = "container">
+            <h4>Question 4</h4>
+            <p>You like puzzles.</p>
+            <select class="chosen-select" id="question_4">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select>
+            <hr>
+        </div>
+        
+        <div class = "container">
+            <h4>Question 5</h4>
+            <p>You do things not in your comfort zone.</p>
+            <select class="chosen-select" id="question_5">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select>
+            <hr>
+        </div>
+        
+        <div class = "container">
+            <h4>Question 6</h4>
+            <p>You enjoy doing surveys</p>
+            <select class="chosen-select" id="question_6">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select>
+            <hr>
+        </div>
+        
+        <div class = "container">
+            <h4>Question 7</h4>
+            <p>You can be trusted and relied on.</p>
+            <select class="chosen-select" id="question_7">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select>
+            <hr>
+        </div>
+        
+        <div class = "container">
+            <h4>Question 8</h4>
+            <p>You enjoy relaxing and quiet activies.</p>
+            <select class="chosen-select" id="question_8">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select>
+            <hr>
+        </div>
+        
+        <div class = "container">
+            <h4>Question 9</h4>
+            <p>You get upset easy and/or often.</p>
+            <select class="chosen-select" id="question_9">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select>
+            <hr>
+        </div>
+        
+        <div class = "container">
+            <h4>Question 10</h4>
+            <p>If you were a cheeseburger, what kind of cheese would you be</p>
+            <select class="chosen-select" id="question_10">
+                <option value="1">American</option>
+                <option value="2">Colby</option>
+                <option value="3">No Cheese</option>
+                <option value="4">Swiss</option>
+                <option value="5">Pepper Jack</option>
+              </select>
+            <hr>
+            <button type="submit" class="btn btn-success btn-lg btn-block" id="submit"><i class="fa fa-check-square"></i>Find My Friend!<i class="fa fa-check-square"></i></button>
+        </div>
+
+        
+        
+        <footer class = "footer">
+            <div class = "container">
+                <p><a href = "/api/friends">API List of Friends</a></p>
+            </div>
+        </footer>
+
+    <script>
+        
+    </script>
+
 </body>
