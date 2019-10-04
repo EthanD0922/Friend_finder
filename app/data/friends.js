@@ -1,7 +1,7 @@
 var friendsData = [
     {
         name: "tester",
-        picture: "blah",
+        picture: "https://www.outbrain.com/techblog/wp-content/uploads/2017/05/road-sign-361513_960_720.jpg",
         scores: [ 
             1,
             2,
